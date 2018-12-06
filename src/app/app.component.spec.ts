@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'vehicleTrackerApp'`, () => {
+  it(`should have as title 'Vehicle Tracker App'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('vehicleTrackerApp');
+    expect(app.title).toEqual('Vehicle Tracker App');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to vehicleTrackerApp!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to Vehicle Tracker App!');
   });
 });

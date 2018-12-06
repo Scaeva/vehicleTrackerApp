@@ -1,0 +1,33 @@
+#map {
+  height: 300px;
+  position: relative;
+}
+
+#info {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  z-index: 2;
+  border: 1px solid #444;
+  padding: 5px;
+  background-color: rgba(234, 234, 234, 0.8);
+  border-radius: 3px;
+}
+
+  #info .close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+  }
+
+  #info > img {
+    height: 100px;
+    margin-right: 5px;
+    float: left;
+  }
+
+  #info span{
+    font-size: 1.2rem;
+  }

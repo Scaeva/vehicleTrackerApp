@@ -1,0 +1,19 @@
+.messages {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.message{
+  background-color: #dadada;
+  padding: 5px;
+}
+  .message span {
+    padding-left: 10px;
+    color: #444;
+    font-weight: 100;
+  }
+
+  button{
+    margin-left: 20px;
+  }

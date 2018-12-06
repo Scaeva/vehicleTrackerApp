@@ -1,0 +1,15 @@
+<nav>
+  <h2><a routerLink="/users">User list</a></h2>
+</nav>
+<div *ngIf="user">
+  <h2><span class="avatar x2"><img src="{{user.photo}}" /></span> {{user.name}} {{user.surname}} vehicles</h2>
+  <ul class="list">
+    <li *ngFor="let vehicle of user.vehicles" (click)="onSelect(vehicle)" [class.selected]="vehicle === selectedVehicle">
+        <span class="avatar"><img src="{{vehicle.photo}}" /></span>
+        {{vehicle.make}}
+        {{vehicle.model}},
+        {{vehicle.year}}
+    </li>
+  </ul>
+  <app-map-view [user]="user" [selectedVehicle]="selectedVehicle" (selectVehicle)="onSelect($event)"></app-map-view>
+</div>

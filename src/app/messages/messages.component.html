@@ -1,0 +1,3 @@
+<div class="messages" *ngIf="messageService.messages.length">
+  <div class="message" *ngFor='let message of messageService.messages'><span>{{message.text}}</span><button class="btn btn-primary" *ngIf="message.callback" (click)="retry(message)">retry</button></div>
+</div>

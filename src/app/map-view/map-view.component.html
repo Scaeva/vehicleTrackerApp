@@ -1,0 +1,7 @@
+<div id="map">
+  <div id="info" *ngIf="selectedVehicle">
+    <span class="close" (click)="deselectVehicle()">[x]</span>
+    <img src="{{selectedVehicle.photo}}" /><span class="make-model">{{selectedVehicle.make}} {{selectedVehicle.model}}</span>
+    <div *ngIf="selectedVehicleLocation">Current address: {{selectedVehicleLocation.address}}</div>
+  </div>
+</div>

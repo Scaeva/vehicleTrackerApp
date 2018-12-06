@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+  .list > li {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background-color: #ccc;
+    cursor: pointer;
+    color: #222;
+  }
+
+    .list > li:hover {
+      background-color: #999;
+    }
+
+    .list > li + li {
+      margin-top: 5px;
+    }
+
+    .list > li > a {
+      text-decoration: none;
+      display: block;
+      color: inherit;
+    }
+
+.avatar {
+  display: inline-flex;
+  flex: 0 0 30px;
+  height: 30px;
+  overflow: hidden;
+  position: relative;
+  width: 30px;
+  vertical-align: middle;
+}
+
+  .avatar.x2 {
+    flex-basis: 60px;
+    height: 60px;
+    width: 60px;
+  }
+
+  .avatar > img {
+    border-radius: 5px;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+}
