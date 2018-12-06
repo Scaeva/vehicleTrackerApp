@@ -14,8 +14,8 @@
     "e2e": "ng e2e"
   },
   "private": true,
+  "engines": { "node": ">=10.14.1" },
   "dependencies": {
-    "node": "^10.14.1",
     "@angular/animations": "~7.1.0",
     "@angular/common": "~7.1.0",
     "@angular/compiler": "~7.1.0",
